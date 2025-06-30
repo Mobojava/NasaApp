@@ -25,12 +25,12 @@
 ## 📸 Screenshots
 
 <div align="center">
-  <img src="images/image1.png" width="250" />
-  <img src="images/image2.png" width="250" />
-  <img src="images/image3.png" width="250" />
-  <img src="images/image4.png" width="250" />
-  <img src="images/image5.png" width="250" />
-  <img src="images/image6.png" width="250" />
+  <img src="image1.png" width="250" />
+  <img src="image2.png" width="250" />
+  <img src="image3.png" width="250" />
+  <img src="image4.png" width="250" />
+  <img src="image5.png" width="250" />
+  <img src="image6.png" width="250" />
 </div>
 
 ---
