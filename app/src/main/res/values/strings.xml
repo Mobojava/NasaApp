@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Nasa</string>
+    <string name="EditProfile">Edit Profile</string>
+    <string name="MyProfile">My Profile</string>
+    <string name="AccountSettings">Account Settings</string>
+    <string name="Downloads">Downloads</string>
+    <string name="Favorites">Favorites</string>
+    <string name="Notifications">Notifications</string>
+    <string name="Language">Language</string>
+    <string name="Logout">Logout</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+
+    <color name="red">#D50000</color>
+
+    <color name="colorOnPrimary">#000</color>
+
+    <color name="new_background">#e0e0e0</color>
+    <color name="new_shadow1">#676767</color>
+    <color name="new_shadow2">#ffffff</color>
+
+    <color name="text_gray">#7F8489</color>
+    <color name="text_white">#FDFDFD</color>
+
+    <color name="icon_default_color">#7F8489</color>
+    <color name="blue_light">#11A8FD</color>
+
+</resources>
+

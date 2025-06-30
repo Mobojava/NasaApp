@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Theme.Neumorphism" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+
+    <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/new_background</item>
+        <item name="colorPrimaryVariant">@color/new_background</item>
+        <item name="colorOnPrimary">@color/text_white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue_light</item>
+        <item name="colorSecondaryVariant">@color/blue_light</item>
+        <item name="colorOnSecondary">@color/text_gray</item>
+
+        <!-- رنگ Status Bar -->
+        <item name="android:statusBarColor">@color/new_background</item>
+
+        <!-- رنگ Navigation Bar -->
+        <item name="android:navigationBarColor">@color/new_background</item>
+
+        <!-- رنگ متن و آیکون Status Bar -->
+        <item name="android:windowLightStatusBar">true</item> <!-- برای تم روشن -->
+        <!-- یا false برای تم تاریک -->
+
+        <item name="fontFamily">@font/roboto_medium</item>
+
+    </style>
+
+    <style name="NeumorphismImage">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">30dp</item>
+    </style>
+
+    <style name="NeumorphismCard">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">10dp</item>
+    </style>
+
+    <style name="neuButton">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">2dp</item>
+    </style>
+    <style name="menu">
+        <item name="popupMenuBackground">@color/new_background</item>
+    </style>
+</resources>
+
+

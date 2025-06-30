@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_background"
+    tools:context=".ui.MainActivity">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/new_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+                <soup.neumorphism.NeumorphImageView
+                    android:id="@+id/neumorphImageView2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:padding="25dp"
+                    android:src="@drawable/profile"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:neumorph_shadowColorDark="@color/new_shadow2"
+                    app:neumorph_shadowColorLight="@color/new_shadow1"
+                    app:neumorph_shadowElevation="3dp"
+                    app:neumorph_shapeType="pressed" />
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/neumorphCardView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:layout_constraintStart_toStartOf="@+id/neumorphImageView2"
+            app:layout_constraintTop_toBottomOf="@+id/neumorphImageView2"
+            app:neumorph_shadowColorDark="@color/new_shadow2"
+            app:neumorph_shadowColorLight="@color/new_shadow1"
+            app:neumorph_shadowElevation="3dp"
+            app:neumorph_shapeType="pressed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Mohammad Saeed Gholami"
+                    android:textColor="@color/colorOnPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Web and Mobile Developer "
+                    android:textColor="@color/colorOnPrimary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+
+        <ScrollView
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/neumorphCardView2"
+            app:layout_constraintTop_toBottomOf="@+id/neumorphCardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <soup.neumorphism.NeumorphButton
+                    android:text="@string/MyProfile"
+                    android:id="@+id/btn1"
+                    android:textStyle="bold"
+                    android:drawableStart="@drawable/ic_profile"
+                    android:padding="30dp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/colorOnPrimary"
+                    android:backgroundTint="@color/colorOnPrimary"
+                    android:gravity="center"
+                    app:neumorph_shapeType="flat"
+                    app:neumorph_shadowElevation="3dp"
+                    app:neumorph_shadowColorDark="@color/new_shadow1"
+                    app:neumorph_shadowColorLight="@color/new_shadow2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+
+                <soup.neumorphism.NeumorphButton
+                    android:text="@string/EditProfile"
+                    android:id="@+id/btn2"
+                    android:textStyle="bold"
+                    android:drawableStart="@drawable/ic_edit"
+                    android:padding="30dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:backgroundTint="@color/colorOnPrimary"
+                    android:gravity="center"
+                    android:textColor="@color/colorOnPrimary"
+                    android:textSize="12sp"
+                    app:neumorph_shapeType="flat"
+                    app:neumorph_shadowElevation="3dp"
+                    app:neumorph_shadowColorDark="@color/new_shadow1"
+                    app:neumorph_shadowColorLight="@color/new_shadow2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+
+                <soup.neumorphism.NeumorphButton
+                    android:text="@string/Downloads"
+                    android:id="@+id/btn3"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto_medium"
+                    android:drawableStart="@drawable/dowenload"
+                    android:padding="30dp"
+                    android:backgroundTint="@color/colorOnPrimary"
+                    android:gravity="center"
+                    android:textColor="@color/colorOnPrimary"
+                    android:textSize="12sp"
+                    app:neumorph_shapeType="flat"
+                    app:neumorph_shadowElevation="3dp"
+                    app:neumorph_shadowColorDark="@color/new_shadow1"
+                    app:neumorph_shadowColorLight="@color/new_shadow2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+
+                <soup.neumorphism.NeumorphButton
+                    android:text="@string/Favorites"
+                    android:id="@+id/btn4"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textStyle="bold"
+                    android:drawableStart="@drawable/favorite_icon"
+                    android:padding="30dp"
+                    android:backgroundTint="@color/colorOnPrimary"
+                    android:gravity="center"
+                    android:textColor="@color/colorOnPrimary"
+                    android:textSize="12sp"
+                    app:neumorph_shapeType="flat"
+                    app:neumorph_shadowElevation="3dp"
+                    app:neumorph_shadowColorDark="@color/new_shadow1"
+                    app:neumorph_shadowColorLight="@color/new_shadow2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+
+                <soup.neumorphism.NeumorphButton
+                    android:text="@string/Notifications"
+                    android:id="@+id/btn5"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto_medium"
+                    android:drawableStart="@drawable/notifications"
+                    android:padding="30dp"
+                    android:textColor="@color/colorOnPrimary"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/colorOnPrimary"
+                    android:gravity="center"
+                    app:neumorph_shapeType="flat"
+                    app:neumorph_shadowElevation="3dp"
+                    app:neumorph_shadowColorDark="@color/new_shadow1"
+                    app:neumorph_shadowColorLight="@color/new_shadow2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+
+                <soup.neumorphism.NeumorphButton
+                    android:text="@string/Language"
+                    android:id="@+id/btn6"
+                    android:textStyle="bold"
+                    android:drawableStart="@drawable/language"
+                    android:padding="30dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/colorOnPrimary"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/colorOnPrimary"
+                    android:gravity="center"
+                    app:neumorph_shapeType="flat"
+                    app:neumorph_shadowElevation="3dp"
+                    app:neumorph_shadowColorDark="@color/new_shadow1"
+                    app:neumorph_shadowColorLight="@color/new_shadow2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+
+                <soup.neumorphism.NeumorphButton
+                    android:text="@string/Logout"
+                    android:id="@+id/btn7"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textStyle="bold"
+                    android:drawableStart="@drawable/logout"
+                    android:padding="30dp"
+                    android:backgroundTint="@color/colorOnPrimary"
+                    android:gravity="center"
+                    android:textColor="@color/colorOnPrimary"
+                    android:textSize="12sp"
+                    app:neumorph_shapeType="flat"
+                    app:neumorph_shadowElevation="3dp"
+                    app:neumorph_shadowColorDark="@color/new_shadow1"
+                    app:neumorph_shadowColorLight="@color/new_shadow2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/new_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:neumorph_shapeType="pressed"
+            app:neumorph_backgroundColor="@color/new_background"
+            app:neumorph_shadowColorLight="@color/new_shadow1"
+            app:neumorph_shadowColorDark="@color/new_shadow2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <soup.neumorphism.NeumorphImageView
+                    android:id="@+id/ic_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:src="@drawable/ic_menu"
+                    android:tint="@color/colorOnPrimary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:neumorph_backgroundColor="@color/new_background"
+                    app:neumorph_shadowColorDark="@color/new_shadow1"
+                    app:neumorph_shadowColorLight="@color/new_shadow2"
+                    app:neumorph_shadowElevation="3dp"
+                    app:neumorph_shapeType="flat" />
+
+                <TextView
+                    android:id="@+id/title_toolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nasa "
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/colorOnPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/change_them"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@id/ic_menu"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <soup.neumorphism.NeumorphImageView
+                    android:id="@+id/change_them"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:src="@drawable/ic_dark"
+                    android:tint="@color/colorOnPrimary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:neumorph_backgroundColor="@color/new_background"
+                    app:neumorph_shadowColorDark="@color/new_shadow1"
+                    app:neumorph_shadowColorLight="@color/new_shadow2"
+                    app:neumorph_shadowElevation="3dp"
+                    app:neumorph_shapeType="flat" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerMain"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading_light"
+        tools:ignore="MissingClass,MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
